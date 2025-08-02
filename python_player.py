@@ -64,7 +64,7 @@ class VideoPlayer(QtWidgets.QWidget):
         self.time_label.setObjectName("TimeLabel")
         self.time_label.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
         self.time_label.setFont(QtGui.QFont("Consolas", 9))
-        self.time_label.setFixedWidth(100)
+        self.time_label.setFixedWidth(155)
         self.time_label.setFixedHeight(18)
 
         timeline_row.addWidget(self.timeline, 1)
@@ -322,3 +322,4 @@ if __name__ == "__main__":
     player = VideoPlayer()
     player.show()
     sys.exit(app.exec_())
+
