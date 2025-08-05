@@ -24,7 +24,7 @@ class PDFSplitterUI(QtWidgets.QWidget):
         """
         button_style1 = """
             QPushButton {
-                font-size: 17px; background: #bd93f9; color: #23272f; font-weight: thin; border-radius: 7px;
+                font-size: 17px; background: #bd93f9; color: #23272f; font-weight: bold; border-radius: 7px;
             }
             QPushButton:hover { background: #b4aaff; }
         """
@@ -96,8 +96,8 @@ class PDFSplitterUI(QtWidgets.QWidget):
         output_row.addWidget(self.output_path, 1)
         browse_btn = QtWidgets.QPushButton("Browse")
         browse_btn.setStyleSheet(button_style1)
-        browse_btn.setFixedHeight(30)
-        browse_btn.setFixedWidth(90)
+        browse_btn.setFixedHeight(32)
+        browse_btn.setFixedWidth(100)
         browse_btn.clicked.connect(self.select_output_path)
         output_row.addWidget(browse_btn)
         layout.addLayout(output_row)
@@ -205,3 +205,4 @@ if __name__ == "__main__":
     win = PDFSplitterUI()
     win.show()
     sys.exit(app.exec_())
+
