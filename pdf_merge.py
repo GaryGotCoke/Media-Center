@@ -48,7 +48,7 @@ class PDFMergeUI(QtWidgets.QWidget):
 
         button_style1 = """
             QPushButton {
-                font-size: 17px; background: #bd93f9; color: #23272f; font-weight: thin; border-radius: 7px;
+                font-size: 17px; background: #bd93f9; color: #23272f; font-weight: bold; border-radius: 7px;
             }
             QPushButton:hover { background: #b4aaff; }
         """
@@ -68,7 +68,12 @@ class PDFMergeUI(QtWidgets.QWidget):
         btn_row.addWidget(add_btn)
 
         remove_btn = QtWidgets.QPushButton("Remove Selected")
-        remove_btn.setStyleSheet(button_style)
+        remove_btn.setStyleSheet("""
+            QPushButton {
+                font-size: 18px; background: #44475a; color: #f8f8f2; font-weight: bold; border-radius: 7px;
+            }
+            QPushButton:hover { background: #bd93f9; }
+        """)
         remove_btn.setFixedHeight(44)
         remove_btn.clicked.connect(self.remove_selected)
         btn_row.addWidget(remove_btn)
@@ -96,7 +101,7 @@ class PDFMergeUI(QtWidgets.QWidget):
         browse_btn = QtWidgets.QPushButton("Browse")
         browse_btn.setStyleSheet(button_style1)
         browse_btn.setFixedHeight(30)
-        browse_btn.setFixedWidth(90)
+        browse_btn.setFixedWidth(100)
         browse_btn.clicked.connect(self.select_output_path)
         output_row.addWidget(browse_btn)
         main_layout.addLayout(output_row)
@@ -180,3 +185,4 @@ if __name__ == "__main__":
     win = PDFMergeUI()
     win.show()
     sys.exit(app.exec_())
+
