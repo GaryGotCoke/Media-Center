@@ -59,7 +59,7 @@ With a single, beautiful dark-themed app, you can:
 
 ## How to Use
 
-- **Download the .EXE file to run, or download each individual python file if you only want to use a certain tool.**
+- **Download the .EXE file to run, or download individual python file if you only want to use a certain tool.**
 - Open the app, use the sidebar to navigate to any tool
 - Each tool page includes clear instructions and requirements
 - For issues with missing features, double-check the external programs above are installed & in PATH
