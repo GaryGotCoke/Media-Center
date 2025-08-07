@@ -99,10 +99,11 @@ MIT License
 
 ## Changelog
 
-- v1.0 — Initial release: all core tools, themed UI
+- v1.0 — Torrent downloader support, Video player, Dark UI
 - v1.1 — Added YouTube/TikTok/Bilibili downloads, better instructions
-- v1.2 — Torrent support, PDF compressor, PPTX to PDF, credits page
-- v1.3 — UI polish, improved help & onboarding
+- v1.2 — Added Music player, Home page
+- v1.3 — Added PDF tools, Images Tools
+- v1.4 — UI polish, detailed help pages, launch-from-lobby
 
 ---
 
