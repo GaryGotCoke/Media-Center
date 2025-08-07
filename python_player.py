@@ -317,10 +317,18 @@ class VideoPlayer(QtWidgets.QWidget):
         m, s = divmod(secs, 60)
         return f"{int(m):02d}:{int(s):02d}"
 
+    def closeEvent(self, event):
+        try:
+            self.media_player.stop()
+        except Exception:
+            pass
+        event.accept()
+
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     player = VideoPlayer()
     player.show()
     sys.exit(app.exec_())
+
 
 
