@@ -16,7 +16,7 @@ class ClickableSlider(QtWidgets.QSlider):
 class VideoPlayer(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Coke Media Player")
+        self.setWindowTitle("Coke Video Player")
         self.setGeometry(150, 150, 900, 550)
         self.instance = vlc.Instance()
         self.media_player = self.instance.media_player_new()
@@ -329,6 +329,7 @@ if __name__ == "__main__":
     player = VideoPlayer()
     player.show()
     sys.exit(app.exec_())
+
 
 
 
