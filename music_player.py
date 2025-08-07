@@ -386,6 +386,13 @@ class MusicPlayerUI(QtWidgets.QWidget):
         m, s = divmod(secs, 60)
         return f"{int(m):02d}:{int(s):02d}"
 
+    def closeEvent(self, event):
+        try:
+            self.media_player.stop()
+        except Exception:
+            pass
+        event.accept()
+
     # --- Fullscreen logic: center fixed-size widget ---
     def toggle_fullscreen(self):
         if not self.is_fullscreen:
@@ -402,3 +409,4 @@ if __name__ == "__main__":
     win = MusicPlayerUI()
     win.show()
     sys.exit(app.exec_())
+
