@@ -166,8 +166,8 @@ class YouTubeDownloaderUI(QtWidgets.QWidget):
 
         # --- Format selection (video/audio) ---
         self.format_combo = QtWidgets.QComboBox()
-        self.format_combo.addItems(["Audio (mp3) -- up to 192kpbs",
-                                     "Video + Audio(mp4) -- up to 1080p", 
+        self.format_combo.addItems(["Audio (mp3) -- up to 192kbps",
+                                     "Video + Audio (mp4) -- up to 1080p", 
                                      "Video Only (WebM) -- MAX resolution"])
         self.format_combo.setStyleSheet("""
             QComboBox { background: #282a36; color: #f8f8f2; font-size: 20px; border-radius: 6px; padding: 6px 20px; }
@@ -283,3 +283,4 @@ if __name__ == "__main__":
     win = YouTubeDownloaderUI()
     win.show()
     sys.exit(app.exec_())
+
