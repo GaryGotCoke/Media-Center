@@ -142,8 +142,8 @@ class TikTokDownloaderUI(QtWidgets.QWidget):
         layout.addLayout(url_row)
 
         self.format_combo = QtWidgets.QComboBox()
-        self.format_combo.addItems(["Audio (mp3) -- up to 192kpbs",
-                                   "Video + Audio(mp4) -- up to 1080p"])
+        self.format_combo.addItems(["Audio (mp3) -- up to 192kbps",
+                                   "Video + Audio (mp4) -- up to 1080p"])
         self.format_combo.setStyleSheet("""
             QComboBox { background: #282a36; color: #f8f8f2; font-size: 20px; border-radius: 6px; padding: 6px 20px; }
             QComboBox QAbstractItemView { background: #282a36; color: #f8f8f2; }
@@ -232,4 +232,5 @@ if __name__ == "__main__":
     win = TikTokDownloaderUI()
     win.show()
     sys.exit(app.exec_())
+
 
