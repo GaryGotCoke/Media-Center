@@ -144,7 +144,7 @@ class BilibiliDownloaderUI(QtWidgets.QWidget):
 
         self.format_combo = QtWidgets.QComboBox()
         self.format_combo.addItems([
-            "Audio (mp3) -- up to 192kpbs",
+            "Audio (mp3) -- up to 192kbps",
             "Video + Audio (mp4) -- up to 1080p"
         ])
         self.format_combo.setStyleSheet("""
@@ -239,3 +239,4 @@ if __name__ == "__main__":
     win = BilibiliDownloaderUI()
     win.show()
     sys.exit(app.exec_())
+
