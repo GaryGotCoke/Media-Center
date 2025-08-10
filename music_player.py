@@ -174,7 +174,7 @@ class MusicPlayerUI(QtWidgets.QWidget):
             }
             QPushButton:hover { background: #b4aaff; }
         """)
-        self.repeat_btn.clicked.connect(self.toggle_repeat)
+
         for btn in [self.prev_btn, self.play_btn, self.pause_btn, self.stop_btn, self.next_btn, self.repeat_btn]:
             btn.setFixedSize(80, 38)
         controls_row.addWidget(self.prev_btn)
@@ -409,4 +409,5 @@ if __name__ == "__main__":
     win = MusicPlayerUI()
     win.show()
     sys.exit(app.exec_())
+
 
