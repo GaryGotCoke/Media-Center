@@ -1,4 +1,4 @@
-# Coke Media Center (not yet complete)
+# Coke Media Center 
 
 **All-in-one Windows desktop app for downloading, converting, and managing your media and documents!**  
 _Built with Python, PyQt5, and open-source tools. Designed by [GotCoke](#)
